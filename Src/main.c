@@ -182,7 +182,7 @@ uint32_t get_psp_value(){
 }
 
 uint32_t save_psp_value(uint32_t current_psp){
-	user_tasks[current_task].psp_value = current_psp;
+	return user_tasks[current_task].psp_value = current_psp;
 }
 
 void update_next_task(void){
